@@ -17,7 +17,7 @@ public class CalcCraftCost {
 		correctPrefixChance = (prefixIWant / findModTotals.prefixesAvailable(flask)) * 100;
 		correctSuffixChance = (suffixIWant / findModTotals.suffixesAvailable(flask)) * 100;
 		chanceOfBothCorrect = correctPrefixChance / correctSuffixChance;
-	
+		
 		//report total chance
 		itemReporter.ChanceToCraft(correctPrefixChance, correctSuffixChance, chanceOfBothCorrect);
 		

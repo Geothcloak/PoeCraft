@@ -1,14 +1,19 @@
 
 public class FlaskItemControler {
-	PrefixListSnapshot prefixListSnapshot = new PrefixListSnapshot();
-	PrefixListable prefixListable = prefixListSnapshot;
+	private PrefixListSnapshot prefixListSnapshot = new PrefixListSnapshot();
+	private PrefixListable prefixListable = prefixListSnapshot;
 	
-	SuffixListSnapshot suffixListSnapshot = new SuffixListSnapshot();
-	SuffixListable suffixListable = suffixListSnapshot;
+	private SuffixListSnapshot suffixListSnapshot = new SuffixListSnapshot();
+	private SuffixListable suffixListable = suffixListSnapshot;
 	
+	private InputFromUser inputFromUser = new InputFromUser();
 	
+	private CurrencyMarketSnapshot currencyMarketSnapshot = new CurrencyMarketSnapshot();
+	private Valueable valuable = currencyMarketSnapshot;
+	private CalcCraftCost calcCraftCost = new CalcCraftCost(valuable);
 	
-	Flask flask = new Flask("QuickSilver", 0, prefixListable, suffixListable);
-	
-	
-}
+	public void CreateQuickSilver(){
+		Flask flask = new Flask(inputFromUser.NameOfItem(), inputFromUser.QuickSilverItemLevel(), prefixListable, suffixListable);
+		calcCraftCost.QuicksilverFlask(flask);
+	}
+ } 
