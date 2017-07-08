@@ -3,37 +3,37 @@ public class CurrencyMarketSnapshot implements Valueable{
 
 	@Override
 	public float AlterationOrbValue(float amount) {
-		return 15 * amount;
+		return amount / 15;
 	}
 
 	@Override
 	public float AugmentationOrbValue(float amount) {
-		return 20 * amount;
+		return amount / 20;
 	}
 
 	@Override
 	public float TransmutationOrbValue(float amount) {
-		return 60 * amount;
+		return amount / 60;
 	}
 
 	@Override
 	public float FusingOrbValue(float amount) {
-		return 3 * amount;
+		return amount / 3;
 	}
 
 	@Override
 	public float AlchemyOrbValue(float amount) {
-		return 4 * amount;
+		return amount / 4;
 	}
 
 	@Override
 	public float ChaosOrbValue(float amount) {
-		return 1 * amount;
+		return amount / 1;
 	}
 
 	@Override
 	public float ChanceOrbValue(float amount) {
-		return 7 * amount;
+		return amount / 7;
 	}
 
 	@Override
