@@ -16,9 +16,9 @@ public class FlaskItemController {
 		Flask flask = new Flask(inputFromUser.NameOfItem(), inputFromUser.QuickSilverItemLevel(), prefixListable, suffixListable);
 		calcCraftCost.QuicksilverFlask(flask);
 	}
-	//TODO get calculator to work working fully with correct output...
+	//TODO impliment linkedlist, create beans for suffix and prefix.
 	//TODO remove println inside findmodtotals
 	//TODO working tests for all classes
-	//TODO using nonunique keys for hashmaps... need alternative
+	
 	
  } 

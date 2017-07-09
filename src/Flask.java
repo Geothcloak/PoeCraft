@@ -1,8 +1,8 @@
 import java.util.HashMap;
 
 public class Flask extends Item{
-	private HashMap<Integer, String> prefixList = new HashMap<Integer, String>();
-	private HashMap<Integer, String> suffixList = new HashMap<Integer, String>();
+	private HashMap<String, Integer> prefixList = new HashMap<String, Integer>();
+	private HashMap<String, Integer> suffixList = new HashMap<String, Integer>();
 	
 	public Flask(String name, int itemLevel, PrefixListable prefixList, SuffixListable sufixList) {
 		super(name, itemLevel);
@@ -10,11 +10,11 @@ public class Flask extends Item{
 		this.suffixList = sufixList.generateSufixList(itemLevel);
 	}
 
-	public HashMap<Integer, String> getPrefixList() {
+	public HashMap<String, Integer> getPrefixList() {
 		return prefixList;
 	}
 
-	public HashMap<Integer, String> getSuffixList() {
+	public HashMap<String, Integer> getSuffixList() {
 		return suffixList;
 	}
 }

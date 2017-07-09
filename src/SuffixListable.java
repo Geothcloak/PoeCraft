@@ -1,5 +1,5 @@
 import java.util.HashMap;
 
 public interface SuffixListable {
-	public HashMap<Integer, String> generateSufixList(int itemLevel);
+	public HashMap<String, Integer> generateSufixList(int itemLevel);
 }
