@@ -1,3 +1,12 @@
+import com.justin.currencymarket.CalcCraftCost;
+import com.justin.currencymarket.CurrencyMarketSnapshot;
+import com.justin.currencymarket.Valueable;
+import com.justin.input.InputFromUser;
+import com.justin.itemmods.PrefixListSnapshot;
+import com.justin.itemmods.PrefixListable;
+import com.justin.itemmods.SuffixListSnapshot;
+import com.justin.itemmods.SuffixListable;
+import com.justin.items.Flask;
 
 public class FlaskItemController {
 	private PrefixListSnapshot prefixListSnapshot = new PrefixListSnapshot();
