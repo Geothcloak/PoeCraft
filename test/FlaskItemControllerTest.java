@@ -1,5 +1,8 @@
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+
+import com.justin.items.Flask;
 
 public class FlaskItemControllerTest {
 	FlaskItemController flaskItemControler;
@@ -10,6 +13,8 @@ public class FlaskItemControllerTest {
 	
 	@Test
 	public void CanCreateQuickSilver(){
-		flaskItemControler.CreateQuickSilver();
+		//flaskItemControler.CreateQuickSilver();
+		Flask flask = null;
+		Assert.assertEquals(flask, flaskItemControler.CreateQuickSilver());
 	}
 }

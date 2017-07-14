@@ -21,9 +21,10 @@ public class FlaskItemController {
 	private Valueable valuable = currencyMarketSnapshot;
 	private CalcCraftCost calcCraftCost = new CalcCraftCost(valuable);
 	
-	public void CreateQuickSilver(){
+	public Flask CreateQuickSilver(){
 		Flask flask = new Flask(inputFromUser.NameOfItem(), inputFromUser.QuickSilverItemLevel(), prefixListable, suffixListable);
 		calcCraftCost.QuicksilverFlask(flask);
+		return flask;
 	}
 	//TODO impliment linkedlist, create beans for suffix and prefix.
 	//TODO remove println inside findmodtotals
