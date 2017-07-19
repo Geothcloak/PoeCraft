@@ -21,4 +21,5 @@ public class Flask extends Item{
 	public HashMap<String, Integer> getSuffixList() {
 		return suffixList;
 	}
+	
 }
